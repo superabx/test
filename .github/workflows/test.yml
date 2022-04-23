@@ -1,0 +1,27 @@
+name: Test workflow
+
+on:
+  workflow_dispatch:
+    branches:
+      - master
+
+env:
+  CONTAINER_NAME: test-cont           # set this to the name of the container in the
+                                               # containerDefinitions section of your task definition
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+     - name: cmd test
+      id: build-image
+            run: |
+        sed -v
+        awk
+        perl -v
