@@ -20,8 +20,8 @@ jobs:
 
     steps:
      - name: cmd test
-      id: build-image
-            run: |
-        sed -v
-        awk
-        perl -v
+       id: build-image
+       run: |
+         sed -v
+         awk
+         perl -v
